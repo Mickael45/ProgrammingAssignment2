@@ -1,11 +1,12 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Caches matrix
+## Provides set of functions that allows the user to:
+## 1) Get the cached inversed matrix
+## 2) Set the cached inversed matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
-  get <- function() x
   setmean <- function(inv) m <<- inv
   getmean <- function() m
   list(get = get,
